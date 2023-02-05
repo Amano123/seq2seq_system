@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "workspace"
+version = "0.1.0"
+description = ""
+authors = ["yoo <mi21a001@oecu.jp>"]
+readme = "README.md"
+
+packages = [
+    { include = "GPT2_System" },
+    { include = "dataloader" }
+]
+
+[tool.poetry.dependencies]
+python = "3.9.5"
+transformers = "4.25.1"
+ipykernel = "^6.19.4"
+sentencepiece = "^0.1.97"
+torch = "^1.13.1"
+fugashi = "^1.2.1"
+unidic = "^1.1.0"
+ipadic = "^1.0.0"
+polars = "^0.16.1"
+datasets = "^2.9.0"
+absl-py = "^1.4.0"
+nltk = "^3.8.1"
+rouge-score = "^0.1.2"
+accelerate = "^0.16.0"
+evaluate = "^0.4.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
